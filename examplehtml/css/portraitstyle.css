@@ -1,0 +1,17 @@
+.pictures{
+    height: 480px;
+    width: 360px;
+    margin: 20px;
+    align-items: center;
+    border: 20px solid black;
+    padding: 20px
+}
+
+a .pictures{
+    border: 20px solid green;
+}
+
+
+.tableObject{
+    align-self: center;
+}

@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* dropdown section */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: darkslategray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: aliceblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {background-color: darkslategray;}
+.dropdown:hover .dropdownContent {display: block;}
+/* End dropdown */
+
+.active{
+    background-color: lightslategray;
+}
+
+
+.card__container{
+    display: inline-block;
+}
+
+/* card section */
+.CardTableRow{
+    display: inline;
+}
+table td{
+    width: 100px;
+}
+.CardExternal{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100;
+    scale:30%;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    display: inline;
+    position: relative;
+    float: left;
+    z-index: 0;
+    border-radius: 30px;
+
+    transition:0.5s;
+}
+
+.CardExternal:hover{
+    scale: 40%;
+    z-index: 1;
+    box-shadow: 0 8px 16px 2px rgba(0,0,0,0.2);
+}   
+
+#GiovannaCardImage:hover{
+    box-shadow: 0 8px 16px 2px rgba(80, 200, 146,0.5);
+    z-index: 1;
+}
+
+.CardImageDiv{
+    padding: 2px 16px;
+}
+
+.CardData{
+    width: 25vw;
+}
+
+/* menu section */
+.menu{
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    background-color: darkslategray;
+    z-index: 2;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    background-color: darkslategray;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li p{
+    pointer-events: none;
+    cursor: default;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    background-color: darkslategray;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+
+.menu li a:hover{
+    background-color: rgb(39, 62, 62);
+    text-decoration: underline;
+}
+/* end of menu section */

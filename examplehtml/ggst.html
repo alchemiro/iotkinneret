@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <title>Guilty Gear: -STRIVE-</title>
+
+    <style>
+        #h1{
+            color: aqua;
+        }
+
+        .heading{
+            font-size: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portraits.html">Portraits</a></li>
+        <li><a class="active" href="ggst.html">Contact</a></li>
+        <li id="loginButton">
+            <a href="login.html"></a>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            
+            <th id="h1">Name</th>
+            <th class="heading">Portrait</th>
+            <th class="heading"">Description</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>
+                <img src="img/sol.webp" width="104" height="142" alt="Sol">
+            </td>
+            <td>Sol Badguy is the protagonist of the Guilty Gear series. He wields a large sword with a reverse grip and has a headband that covers his mark as a Gear.</td>
+            <td>
+                <a href="https://guiltygear.fandom.com/wiki/Sol_Badguy">GG Fandom Link</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Leo</td>
+            <td>
+                <img src="img/leo.webp" width="104" height="142" alt="Leo">
+            </td>
+            <td>Leo Whitefang is the 2nd king of Illyria and was a general in the Crusades. He wields 2 swords and has 2 stances, each with their own abilities.</td>
+            <td>
+                <a href="https://guiltygear.fandom.com/wiki/Leo_Whitefang">GG Fandom Link</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Potemkin</td>
+            <td>
+                <img src="img/potemkin.webp" width="104" height="142" alt="Potemkin">
+            </td>
+            <td>Potemkin is a former slave in the late Zepp Empire. His strength can move mountains. He is currently leading a democratic revolution alongside President Gabriel.</td>
+            <td>
+                <a href="https://guiltygear.fandom.com/wiki/Potemkin">GG Fandom Link</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Giovanna</td>
+            <td>
+                <img src="img/giovanna.webp" width="104" height="142" alt="Giovanna">
+            </td>
+            <td>Giovanna is an agent working for the President of the United States of America. She has a companion dog named Rei and doesn't want any trouble.</td>
+            <td>
+                <a href="https://guiltygear.fandom.com/wiki/Giovanna">GG Fandom Link</a>
+            </td>
+        </tr>
+    </table>
+
+    <iframe class="vid" width="560" height="315" src="img/slander.mp4" title="Slander" frameborder="0" allowfullscreen></iframe>
+    <form>
+        <label for="name">name:</label>
+        <input type="text" id="name" placeholder="city">
+        <label for="city">city:</label>
+        <select id="city">
+            <option>--Choose a city!--</option>
+            <option value="tveria">Tveria</option>
+            <option value="jerusalem">Jerusalem</option>
+            <option value="telaviv">Tel Aviv</option>
+            <option value="haifa">Haifa</option>
+            <option value="eilat">Eilat</option>
+        </select>
+        <label for="phone">Enter your phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+        <input type="submit">
+    </form>
+
+    
+
+    
+</body>
+</html>
