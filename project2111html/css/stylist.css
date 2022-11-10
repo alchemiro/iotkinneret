@@ -3,84 +3,9 @@ body{
     padding: 0;
 }
 
-/* dropdown section */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: darkslategray;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdownContent a {
-    color: aliceblue;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdownContent a:hover {background-color: darkslategray;}
-.dropdown:hover .dropdownContent {display: block;}
-/* End dropdown */
-
-.active{
-    background-color: lightslategray;
-}
-
-
-.card__container{
-    display: inline-block;
-}
-
-/* card section */
-.CardTableRow{
-    display: inline;
-}
-table td{
-    width: 100px;
-}
-.CardExternal{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 100;
-    scale:30%;
-    margin: 0;
-    padding: 10px 10px 10px 10px;
-    display: inline;
-    position: relative;
-    float: left;
-    z-index: 0;
-    border-radius: 30px;
-
-    transition:0.5s;
-}
-
-.CardExternal:hover{
-    scale: 40%;
-    z-index: 1;
-    box-shadow: 0 8px 16px 2px rgba(0,0,0,0.2);
-}   
-
-#GiovannaCardImage:hover{
-    box-shadow: 0 8px 16px 2px rgba(80, 200, 146,0.5);
-    z-index: 1;
-}
-
-.CardImageDiv{
-    padding: 2px 16px;
-}
-
-.CardData{
-    width: 25vw;
-}
-
 /* menu section */
-.menu{
+/* .menu{
+    width: 100;
     position: fixed;
     list-style-type: none;
     margin: 0;
@@ -88,7 +13,18 @@ table td{
     overflow: visible;
     display: flex;
     background-color: darkslategray;
+} */
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
     z-index: 2;
+    width: 100%;
+    top: 0;
+    background-color: darkslategray;
+    position: fixed;
 }
 
 .menu li{
@@ -120,4 +56,91 @@ table td{
     background-color: rgb(39, 62, 62);
     text-decoration: underline;
 }
+
+.active{
+    background-color: lightslategray;
+}
 /* end of menu section */
+
+/* dropdown section */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: darkslategray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownContent a {
+    color: aliceblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {background-color: darkslategray;}
+.dropdown:hover .dropdownContent {display: block;}
+/* End dropdown */
+
+
+
+
+/* card section */
+.card__list{
+    display: block;
+    width: 50%;
+    border: 0;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.card__list{
+    align-items: center;
+}
+
+.CardExternal{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    scale:50%;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    display: inline;
+    float: left;
+    z-index: 0;
+    align-items: center ;
+
+    
+    
+    border-color: rgb(142, 227, 142);
+    border: solid 5px;
+    border-image-source: linear-gradient(to bottom right, #8ee38e, #61d19c);
+    border-image-slice: 1;
+    border-radius: 30px;
+
+    transition:0.5s;
+}
+
+.CardExternal:hover{
+    scale: 70%;
+    z-index: 1;
+    box-shadow: 0 8px 16px 2px rgba(0,0,0,0.2);
+}   
+
+#GiovannaCardImage:hover{
+    box-shadow: 0 8px 16px 2px rgba(80, 200, 146,0.5);
+    z-index: 1;
+}
+
+.CardImageDiv{
+    padding: 2px 16px;
+}
+
+.CardTextDiv{
+    text-align: center;
+    font-size: 72px;
+}
+
