@@ -91,33 +91,28 @@ body{
 
 
 /* card section */
-.card__list{
-    display: block;
-    width: 50%;
-    border: 0;
-    margin: 0;
-    padding: 10px 10px 10px 10px;
-}
-
-.card__list{
+.container{
+    width: 100%;
     align-items: center;
+    float: left;
+    margin: 300px 0 0 0;
+    
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .CardExternal{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    scale:50%;
-    margin: 0;
+    margin: 10px;
     padding: 10px 10px 10px 10px;
-    display: inline;
     float: left;
     z-index: 0;
-    align-items: center ;
-
     transition:0.5s;
 }
 
 .CardExternal:hover{
-    scale: 70%;
+    scale: 120%;
     z-index: 1;
     box-shadow: 0 8px 16px 2px rgba(0,0,0,0.2);
 }   
@@ -128,17 +123,62 @@ body{
 
 .CardTextDiv{
     text-align: center;
-    font-size: 72px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #GiovannaCardImage{
-    border: solid 5px;
-    background-position: top left;
-    border-image-source: linear-gradient(to bottom right, #8ee38e, #61d19c);
-    border-image-slice: 1;
+    background: linear-gradient(to bottom right, #8ee38e, #61d19c);
+    
     border-radius: 30px;
 }
+
 #GiovannaCardImage:hover{
-    box-shadow: 0 8px 16px 2px rgba(80, 200, 146,0.5);
-    z-index: 1;
+    box-shadow: 8px 16px 30px rgba(80, 200, 146,0.5);
+}
+
+#GiovannaImageText{
+    color: #394B41;
+}
+
+
+#LewisCardImage{
+    background: linear-gradient(to bottom right, #78e2e5, #18d3cd);
+    
+    border-radius: 30px;
+}
+#LewisCardImage:hover{
+    box-shadow: 8px 16px 30px rgba(128, 237, 239,0.7);
+    
+}
+
+#LewisImageText{
+    color: #003C3B;
+}
+
+
+#LeoCardImage{
+    background: linear-gradient(to bottom right, #ffe71d, #ff7c00);
+    border-radius: 30px;
+}
+#LeoCardImage:hover{
+    background: linear-gradient(to bottom right, #ffe71d, #ff7c00);
+    box-shadow: 8px 16px 30px rgba(252,187,44,0.5);
+}
+
+#LeoImageText{
+    color: #680000;
+}
+
+
+#PotCardImage{
+    background: linear-gradient(to bottom right, #63694d, #3a3528);
+    border-radius: 30px;
+}
+#PotCardImage:hover{
+    background: linear-gradient(to bottom right, #63694d, #3a3528);
+    box-shadow: 8px 16px 30px rgba(37,56,49,0.7);
+}
+#PotImageText{
+    color: #7FB6AC;
 }
