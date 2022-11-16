@@ -1,19 +1,25 @@
-body{
+#HomePage{
     margin: 0;
     padding: 0;
+    background-image: url("../img/Ajatar_Hunting_Ground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
-/* menu section */
-/* .menu{
-    width: 100;
-    position: fixed;
-    list-style-type: none;
+.characterBody{
     margin: 0;
     padding: 0;
-    overflow: visible;
-    display: flex;
-    background-color: darkslategray;
-} */
+    background-image: url("../img/Lars_Canyon.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
 .menu{
     list-style-type: none;
     margin: 0;
@@ -181,4 +187,79 @@ body{
 }
 #PotImageText{
     color: #7FB6AC;
+}
+
+/* End of card section */
+
+
+/* start of icons section */
+.footerMenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    overflow: visible;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    background-color: darkslategray;
+    position: fixed;
+}
+
+.footerIcons{
+    color: lightslategray;
+    margin: 0 10px 0 10px;
+    font-size: 68px;
+    float: right;
+    transition: 0.3s;
+}
+
+.footerIcons:hover{
+    scale:110%;
+}
+
+.fa-square-twitter{
+    color: #1DA1F2;
+}
+
+.fa-instagram{
+    color: #e95950;
+}
+
+.fa-square-facebook{
+    color:#17a9fd;
+}
+
+#mapIcon{
+    float: left;
+}
+
+#mapItem{
+    position: fixed;
+    float: left;
+    transition: 0.3s;
+    opacity: 0;
+    bottom: 78px;
+}
+
+#mapIcon:hover #mapItem{
+    opacity: 1;
+}
+
+/* moves */
+
+.moveContainer{
+    margin: 70px 0 0 0;
+}
+
+.ultimateContainer{
+    margin: 0;
+}
+
+div{
+    display: block;
+}
+
+.PotCard{
+    background-color: whitesmoke;
 }
