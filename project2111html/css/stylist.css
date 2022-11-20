@@ -277,17 +277,22 @@
     background: linear-gradient(to bottom right, #ffff00, #fc5b1f);
 }
 
+
 .infoBanner{
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
-#InfoText{
+.InfoText{
     display: flex;
     justify-content: center;
 }
-#InfoText p{
+.InfoText p{
     font-size: 72px;
     background-color: whitesmoke;
     color: #003C3B;
+}
+
+.InfoText iframe{
+    scale: 200%;
 }
