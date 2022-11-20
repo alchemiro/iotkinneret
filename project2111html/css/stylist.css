@@ -256,10 +256,38 @@
     margin: 0;
 }
 
-div{
-    display: block;
+.CharacterCard{
+    background: whitesmoke;
+    border-radius: 15px;
 }
 
-.PotCard{
+.SpecialTable{
+    margin: 50px auto 30px auto;
+    table-layout: fixed;
+}
+
+.SpecialRow{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.UltimateCard{
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom right, #ffff00, #fc5b1f);
+}
+
+.infoBanner{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#InfoText{
+    display: flex;
+    justify-content: center;
+}
+#InfoText p{
+    font-size: 72px;
     background-color: whitesmoke;
+    color: #003C3B;
 }
